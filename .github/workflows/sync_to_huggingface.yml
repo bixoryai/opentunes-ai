@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
       - name: Sync to Hugging Face
-        uses: huggingface/hub-actions/sync-to-huggingface@v1
+        uses: opentunes-ai/.github/workflows/sync-to-huggingface@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           huggingface_token: ${{ secrets.HF_TOKEN }}
